@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXA-IA | Soluções Inteligentes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #071426;
+      color: white;
+    }
+
+    header {
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0b1d35;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #39d5ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #39d5ff;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #c4d2e5;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px 70px;
+    }
+
+    .formulario {
+      background: #102641;
+      padding: 30px;
+      border-radius: 14px;
+    }
+
+    .formulario h2 {
+      color: #39d5ff;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 8px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #34516f;
+      border-radius: 7px;
+      background: #071426;
+      color: white;
+      font-size: 15px;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 22px;
+      padding: 14px 28px;
+      background: #16bce8;
+      color: #071426;
+      border: none;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #9eb2ca;
+      background: #0b1d35;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">NEXA-IA</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#solucoes">Soluções</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Inteligência que transforma <span>negócios</span></h1>
+    <p>
+      Uma plataforma inteligente de soluções empresariais
+      com inteligência artificial para impulsionar resultados,
+      produtividade e inovação.
+    </p>
+  </section>
+
+  <main class="container" id="solucoes">
+    <section class="formulario" id="contato">
+      <h2>Solicite uma solução inteligente</h2>
+
+      <form>
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+
+        <label for="empresa">Nome da empresa</label>
+        <input type="text" id="empresa" placeholder="Digite sua empresa">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="seuemail@exemplo.com">
+
+        <label for="telefone">Telefone / WhatsApp</label>
+        <input type="tel" id="telefone" placeholder="Seu telefone">
+
+        <label for="segmento">Segmento de atuação</label>
+        <select id="segmento">
+          <option value="">Selecione</option>
+          <option>Comércio</option>
+          <option>Indústria</option>
+          <option>Serviços</option>
+          <option>Tecnologia</option>
+          <option>Saúde</option>
+          <option>Educação</option>
+          <option>Outro</option>
+        </select>
+
+        <label for="solucao">Qual solução você procura?</label>
+        <select id="solucao">
+          <option value="">Selecione</option>
+          <option>Automação empresarial</option>
+          <option>Atendimento com IA</option>
+          <option>Marketing inteligente</option>
+          <option>Análise de dados</option>
+          <option>Gestão empresarial</option>
+          <option>Consultoria em IA</option>
+          <option>Outra solução</option>
+        </select>
+
+        <label for="mensagem">Descreva sua necessidade</label>
+        <textarea id="mensagem" placeholder="Conte um pouco sobre seu projeto ou necessidade"></textarea>
+
+        <button type="button">Enviar solicitação</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 NEXA-IA - Soluções Empresariais Inteligentes
+  </footer>
+
+</body>
+</html>
